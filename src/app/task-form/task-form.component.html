@@ -1,0 +1,14 @@
+<h2>Formulario de Tareas</h2>
+<form (submit)="saveTask()">
+  <label>
+    Titulo:
+    <input type="text" [(ngModel)]="task.title" name="title" required>
+  </label>
+  <br>
+  <label>
+    Descripciòn:
+    <textarea [(ngModel)]="task.description" name="description" required></textarea>
+  </label>
+  <br>
+  <button type="submit">Guardar</button>
+</form>
